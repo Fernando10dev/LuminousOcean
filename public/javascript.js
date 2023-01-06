@@ -40,7 +40,7 @@ var palettes = [
     sombra: "#ff1a66"
   }
 ]
-var paletarandom = palettes[Math.floor(fxrand() * palettes.length)]
+var paletarandom = palettes[Math.floor(Math.random() * palettes.length)]
 var fondodepaletalegida = paletarandom.fondo;
 var sombradepaletalegida = paletarandom.sombra;
 var esferadepaletalegida = paletarandom.esferas;
@@ -92,10 +92,10 @@ var numerosal;
 
 var color;
 var colorEsfera = ["#ffffcc", "#ffff99", "#ffff4d", "#ff80ff", "#d2ff4d", "#99ff99", "#00ffbf", "#1aff66", "#66ffff", "#00ffff", "#ff5050", "#ff3385", "#4dffdb"]
-color = colorEsfera[Math.floor(fxrand() * colorEsfera.length)]
+color = colorEsfera[Math.floor(Math.random() * colorEsfera.length)]
 
-var s = fxrand() * 0.01;
-var a = fxrand() * 0.01;
+var s = Math.random() * 0.01;
+var a = Math.random() * 0.01;
 console.log(a, s)
 var numbers1 = ["0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1", "1.1", "1,2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "2"]
 
@@ -146,12 +146,12 @@ function propiedadesferacomun() {
 }
 propiedadesferacomun()
 var aleatorioparagray = ["0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1", "1.1", "1,2", "1.3", "1.4", "1.5"]
-var coloraleatorio = aleatorioparagray[Math.floor(fxrand() * aleatorioparagray.length)]
+var coloraleatorio = aleatorioparagray[Math.floor(Math.random() * aleatorioparagray.length)]
 var fondo;
 var marco;
 var sombra;
 var colorLineas;
-var randomnumero = Math.floor((fxrand() * (50 - 1)) + 1);
+var randomnumero = Math.floor((Math.random() * (50 - 1)) + 1);
 
 console.log(randomnumero)
 
@@ -160,11 +160,11 @@ var sizedefinitivo;
 function printmulticolor() {
 
   for (i = 0; i < 100; i++) {
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var size = Math.floor((fxrand() * (30 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var size = Math.floor((Math.random() * (30 - 5)) + 5);
     var multicolores = ["#0a89cd", "#c52e44", "#fae557"]
-    var paletamulticolor = multicolores[Math.floor(fxrand() * multicolores.length)]
+    var paletamulticolor = multicolores[Math.floor(Math.random() * multicolores.length)]
 
     ctx.beginPath()
     ctx.shadowOffsetX = 20;
@@ -177,11 +177,11 @@ function printmulticolor() {
     ctx.stroke()
   }
   for (i = 0; i < 100; i++) {
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var size = Math.floor((fxrand() * (30 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var size = Math.floor((Math.random() * (30 - 5)) + 5);
     var multicolores = ["#0a89cd", "#c52e44", "#fae557"]
-    var paletamulticolor = multicolores[Math.floor(fxrand() * multicolores.length)]
+    var paletamulticolor = multicolores[Math.floor(Math.random() * multicolores.length)]
 
     ctx.beginPath()
     ctx.shadowOffsetX = 0;
@@ -202,9 +202,9 @@ var descripcion;
 var printSmall = () => {
   for (i = 0; i < 200; i++) {
 
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeS = Math.floor((fxrand() * (10 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var sizeS = Math.floor((Math.random() * (10 - 5)) + 5);
     ctx.beginPath()
     ctx.shadowOffsetX = 5;
     ctx.shadowOffsetY = 5;
@@ -216,9 +216,9 @@ var printSmall = () => {
     ctx.stroke()
   }
   for (i = 0; i < 150; i++) {
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeS = Math.floor((fxrand() * (20 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var sizeS = Math.floor((Math.random() * (20 - 5)) + 5);
     ctx.beginPath()
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
@@ -234,12 +234,12 @@ var printSmall = () => {
 var printdefaulmulticolor = () => {
   for (i = 0; i < 100; i++) {
 
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeM = Math.floor((fxrand() * (30 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var sizeM = Math.floor((Math.random() * (30 - 5)) + 5);
     var colorm;
     var colorEsferam = ["#ffffcc", "#ffff99", "#ffff4d", "#ff80ff", "#d2ff4d", "#99ff99", "#00ffbf", "#1aff66", "#66ffff", "#00ffff", "#ff5050", "#ff3385", "#4dffdb"]
-    colorm = colorEsferam[Math.floor(fxrand() * colorEsferam.length)]
+    colorm = colorEsferam[Math.floor(Math.random() * colorEsferam.length)]
 
     ctx.beginPath()
     ctx.shadowOffsetX = 20;
@@ -252,12 +252,12 @@ var printdefaulmulticolor = () => {
     ctx.stroke()
   }
   for (i = 0; i < 100; i++) {
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeM = Math.floor((fxrand() * (30 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var sizeM = Math.floor((Math.random() * (30 - 5)) + 5);
     var colorm;
     var colorEsferam = ["#ffffcc", "#ffff99", "#ffff4d", "#ff80ff", "#d2ff4d", "#99ff99", "#00ffbf", "#1aff66", "#66ffff", "#00ffff", "#ff5050", "#ff3385", "#4dffdb"]
-    colorm = colorEsferam[Math.floor(fxrand() * colorEsferam.length)]
+    colorm = colorEsferam[Math.floor(Math.random() * colorEsferam.length)]
 
     ctx.beginPath()
     ctx.shadowOffsetX = 0;
@@ -274,12 +274,12 @@ var printdefaulmulticolor = () => {
 var printdefaulmulticolorSmall = () => {
   for (i = 0; i < 250; i++) {
 
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeM = Math.floor((fxrand() * (20 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random()* (2000) + 1));
+    var sizeM = Math.floor((Math.random() * (20 - 5)) + 5);
     var colorm;
     var colorEsferam = ["#ffffcc", "#ffff99", "#ffff4d", "#ff80ff", "#d2ff4d", "#99ff99", "#00ffbf", "#1aff66", "#66ffff", "#00ffff", "#ff5050", "#ff3385", "#4dffdb"]
-    colorm = colorEsferam[Math.floor(fxrand() * colorEsferam.length)]
+    colorm = colorEsferam[Math.floor(Math.random() * colorEsferam.length)]
 
     ctx.beginPath()
     ctx.shadowOffsetX = 20;
@@ -292,12 +292,12 @@ var printdefaulmulticolorSmall = () => {
     ctx.stroke()
   }
   for (i = 0; i < 250; i++) {
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeM = Math.floor((fxrand() * (20 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random()* (2000) + 1));
+    var sizeM = Math.floor((Math.random() * (20 - 5)) + 5);
     var colorm;
     var colorEsferam = ["#ffffcc", "#ffff99", "#ffff4d", "#ff80ff", "#d2ff4d", "#99ff99", "#00ffbf", "#1aff66", "#66ffff", "#00ffff", "#ff5050", "#ff3385", "#4dffdb"]
-    colorm = colorEsferam[Math.floor(fxrand() * colorEsferam.length)]
+    colorm = colorEsferam[Math.floor(Math.random() * colorEsferam.length)]
 
     ctx.beginPath()
     ctx.shadowOffsetX = 0;
@@ -314,9 +314,9 @@ var printdefaulmulticolorSmall = () => {
 var printMedium = () => {
   for (i = 0; i < 150; i++) {
 
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeM = Math.floor((fxrand() * (20 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var sizeM = Math.floor((Math.random() * (20 - 5)) + 5);
     ctx.beginPath()
     ctx.shadowOffsetX = 4;
     ctx.shadowOffsetY = 4;
@@ -328,9 +328,9 @@ var printMedium = () => {
     ctx.stroke()
   }
   for (i = 0; i < 100; i++) {
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeM = Math.floor((fxrand() * (30 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var sizeM = Math.floor((Math.random() * (30 - 5)) + 5);
     ctx.beginPath()
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
@@ -346,9 +346,9 @@ var printMedium = () => {
 function printesferaelegida() {
 
   for (i = 0; i < 200; i++) {
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeM2 = Math.floor((fxrand() * (15 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var sizeM2 = Math.floor((Math.random() * (15 - 5)) + 5);
     ctx.beginPath()
     ctx.shadowOffsetX = 2;
     ctx.shadowOffsetY = 2;
@@ -360,9 +360,9 @@ function printesferaelegida() {
     ctx.stroke()
   }
   for (i = 0; i < 200; i++) {
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeM2 = Math.floor((fxrand() * (20 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var sizeM2 = Math.floor((Math.random() * (20 - 5)) + 5);
     ctx.beginPath()
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
@@ -378,9 +378,9 @@ function printesferaelegida() {
 function printesferaelegidamedium() {
 
   for (i = 0; i < 100; i++) {
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeM2 = Math.floor((fxrand() * (30 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var sizeM2 = Math.floor((Math.random() * (30 - 5)) + 5);
     ctx.beginPath()
     ctx.shadowOffsetX = 20;
     ctx.shadowOffsetY = 20;
@@ -392,9 +392,9 @@ function printesferaelegidamedium() {
     ctx.stroke()
   }
   for (i = 0; i < 100; i++) {
-    var x = Math.floor((fxrand() * (1600) + 1));
-    var y = Math.floor((fxrand() * (2000) + 1));
-    var sizeM2 = Math.floor((fxrand() * (30 - 5)) + 5);
+    var x = Math.floor((Math.random() * (1600) + 1));
+    var y = Math.floor((Math.random() * (2000) + 1));
+    var sizeM2 = Math.floor((Math.random() * (30 - 5)) + 5);
     ctx.beginPath()
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
@@ -419,57 +419,57 @@ switch (randomnumero) {
   case 20:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 21:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 22:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 23:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 24:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 25:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 26:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 27:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 28:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 29:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 30:
     fondo = fondodepaletalegida,
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
     break;
   case 44:
     fondo = "white",
@@ -479,7 +479,7 @@ switch (randomnumero) {
   default:
     fondo = "Black",
       colorLineas = "white",
-      numerosal = numbers1[Math.floor(fxrand() * numbers1.length)]
+      numerosal = numbers1[Math.floor(Math.random() * numbers1.length)]
 }
 
 
@@ -662,7 +662,7 @@ switch (randomnumero) {
 
 
 
-var negativoopositivo = fxrand() >= 0.5
+var negativoopositivo = Math.random() >= 0.5
 var randomnegativoopositivo;
 console.log(negativoopositivo)
 
@@ -676,8 +676,8 @@ var count = 100000
 ctx.lineWidth = 0.25;
 
 for (var i = 0; i < count; i++) {
-  var x = Math.floor((fxrand() * (1600) +1)),
-    y = Math.floor((fxrand() * (2400) + 1));
+  var x = Math.floor((Math.random() * (1600) +1)),
+    y = Math.floor((Math.random() * (2400) + 1));
 
   var value = getValue(x, y);
 
@@ -700,7 +700,7 @@ function render(value) {
   ctx.beginPath();
   ctx.strokeStyle = colorLineas
   ctx.moveTo(0,0);
-  ctx.lineTo(fxrand() * 33 + 33, 1);
+  ctx.lineTo(Math.random() * 33 + 33, 1);
   ctx.stroke();
 }
 function marcodefault() {
